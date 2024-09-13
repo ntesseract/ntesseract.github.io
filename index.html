@@ -10,14 +10,32 @@
             padding: 0;
         }
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     background: url(https://upload-bbs.miyoushe.com/upload/2023/06/21/73565430/8bdd8772f6ed7e914f6a7ae740b3fde1_854747359700863300.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png);
     background-attachment: fixed;
     background-size: cover;
     background-color: #333;
     color: #fff;
-}
+} */
+
+    body {
+      background: linear-gradient(to right, #ff0080, #ff0080, #ff00ff, #0000ff, #00ff00, #00ffff, #00ff00, #0000ff, #ff00ff, #ff0080, #ff0080);
+      background-size: 400% 400%;
+      animation: gradient-animation 10s ease-in-out infinite;
+    }
+    
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
 
 .intro {
     height: 100vh;
